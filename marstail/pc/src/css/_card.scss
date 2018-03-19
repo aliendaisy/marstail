@@ -1,0 +1,13 @@
+.card{
+  display: flex;
+  align-items: center;
+  .icon{
+    width: .5rem;
+    height: .5rem;
+    padding-right: .48rem;
+  }
+  .content{
+    font-size: .24rem;
+    color: #fff;
+  }
+}
