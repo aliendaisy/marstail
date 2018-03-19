@@ -7,9 +7,13 @@ class Header extends Component{
     render() {
         return (
             <div className="header">
-                <p>{this.props.title}</p>
+                <p className="title">{this.props.title}</p>
                 <div className="nav">
-                    1
+                    {this.props.navList.map((list,i) => {
+                        return(
+                            <span key={i}>{list}</span>
+                        )
+                    })}
                 </div>
             </div>
         )
