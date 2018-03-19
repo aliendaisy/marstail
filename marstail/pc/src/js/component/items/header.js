@@ -9,7 +9,7 @@ class Header extends Component{
             <div className="header">
                 <p>{this.props.title}</p>
                 <div className="nav">
-                    
+                    1
                 </div>
             </div>
         )
