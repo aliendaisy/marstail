@@ -1,0 +1,27 @@
+@import "section";
+
+.community{
+  .caption{
+    @include caption(.5rem);
+  }
+  .sub-title{
+    @include subTitle;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.38rem;
+    margin-bottom: 1.1rem;
+    &>div{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    img{
+      width: 3.6rem;
+      min-width: 3.6rem;
+      height: 6.84rem;
+      padding: 0 .42rem;
+    }
+  }
+}

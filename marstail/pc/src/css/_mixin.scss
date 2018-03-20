@@ -1,0 +1,21 @@
+@mixin flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+@mixin caption($paddingTop){
+  font-size: .24rem;
+  text-align: center;
+  padding-top: $paddingTop;
+  line-height: .7rem;
+}
+@mixin subTitle{
+  font-size: .24rem;
+  line-height: .4rem;
+  padding: .22rem 2.25rem 0;
+  text-align: center;
+  height: 1.8rem;
+  box-sizing: border-box;
+}

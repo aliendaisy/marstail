@@ -1,0 +1,22 @@
+@import "card";
+
+.about{
+  .sub-title{
+    @include subTitle;
+  }
+  .cardLine{
+    display: flex;
+    img{
+      width: 41.67%;
+      max-width: 6rem;
+      height: 4rem;
+    }
+    &:nth-of-type(1) .card{
+      margin: 0 .39rem 0 .5rem;
+    }
+    &:nth-of-type(2) .card{
+      margin: 0 .7rem 0 .96rem;
+    }
+    @include card(.7rem,.7rem,.5rem,.24rem,#000);
+  }
+}

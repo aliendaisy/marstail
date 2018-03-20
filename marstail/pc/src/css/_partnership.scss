@@ -1,0 +1,21 @@
+.partnership{
+  .caption{
+    @include caption(.5rem);
+  }
+  .sub-title{
+    @include subTitle;
+    height: auto;
+  }
+  .martian{
+    width: 100%;
+    height: 6.5rem;
+    margin-top: .64rem;
+    background: url('../images/Martian.jpg') no-repeat;
+    background-size: 100%;
+    .green-bg{
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 150, 136, 0.5);
+    }
+  }
+}

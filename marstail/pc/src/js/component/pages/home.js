@@ -27,7 +27,7 @@ class Home extends Component{
     }
     render() {
         return (
-            <div>
+            <div className="home">
                 <Header
                     title={'Marstail'}
                     navList={this.state.navList}
@@ -37,25 +37,25 @@ class Home extends Component{
                 <div className="card-box">
                     <Card
                         icon={Icon1}
-                        iconClass="icon"
                         title="Ecosystem"
                         content="Dynamic, Vibrant, Interactive"
                     />
 
                     <Card
                         icon={Icon2}
-                        iconClass="icon"
                         title="Community"
                         content="Connectivity, Sharing, Creativity"
                     />
 
                     <Card
                         icon={Icon3}
-                        iconClass="icon"
                         title="Marketplace"
                         content="Food, Wellness, Services"
                     />
                 </div>
+                <p className="caption">
+                    Designed for Technology Driven Commercial Real Estate
+                </p>
             </div>
         )
     }

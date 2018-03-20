@@ -1,13 +1,16 @@
-.card{
-  display: flex;
-  align-items: center;
-  .icon{
-    width: .5rem;
-    height: .5rem;
-    padding-right: .48rem;
-  }
-  .content{
-    font-size: .24rem;
-    color: #fff;
+@mixin card($iconW,$iconH,$space,$fontSize,$fontColor){
+  .card{
+    display: flex;
+    align-items: center;
+    .icon{
+      width: $iconW;
+      min-width: $iconW;
+      height: $iconH;
+      padding-right: $space;
+    }
+    .content{
+      font-size: $fontSize;
+      color: $fontColor;
+    }
   }
 }
