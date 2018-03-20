@@ -12,12 +12,12 @@ class LinkArea extends Component{
                     <p>Workplace Community</p>
                 </div>
                 <ul className="linkList">
-                    {this.props.linkList.map((res) => {
+                    {this.props.linkList.map((res,i) => {
                         return(
-                            <li>
-                                {res.map((data) => {
+                            <li key={i}>
+                                {res.map((data,j) => {
                                     return(
-                                        <span>{data}</span>
+                                        <span key={j}>{data}</span>
                                     )
                                 })}
                             </li>
