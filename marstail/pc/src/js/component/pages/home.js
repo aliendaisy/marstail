@@ -6,7 +6,6 @@ import Header from '../items/header';
 import Card from '../items/card';
 
 //图片
-import HomeImg from '../../../images/home.jpg';
 import Icon1 from '../../../icons/earth.png';
 import Icon2 from '../../../icons/Share.png';
 import Icon3 from '../../../icons/Market.png';
@@ -33,7 +32,22 @@ class Home extends Component{
                     navList={this.state.navList}
                 >
                 </Header>
-                <img src={HomeImg} alt="Home"/>
+                <div className="homeImg">
+                    <div className="contentArea">
+                        <div className="bigTitle">
+                            <p>Workplace Community for</p>
+                            <p>Commercial Real Estate</p>
+                        </div>
+                        <div className="smallTitle">
+                            <p>Cross-platform mobile App</p>
+                            <p>for tenant engagement</p>
+                        </div>
+                        <div className="btnArea">
+                            <div className="button active">get started</div>
+                            <div className="button">learn more</div>
+                        </div>
+                    </div>
+                </div>
                 <div className="card-box">
                     <Card
                         icon={Icon1}

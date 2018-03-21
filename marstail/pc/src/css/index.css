@@ -46,6 +46,46 @@
   font-size: 0.24rem;
   color: #fff;
 }
+.home .homeImg {
+  width: 100%;
+  height: 6.5rem;
+  background: url("../images/home.jpg") no-repeat;
+  background-size: 100%;
+}
+.home .homeImg .contentArea {
+  padding: 1.66rem 0 0 .96rem;
+}
+.home .homeImg .contentArea .bigTitle {
+  height: 1.5rem;
+  font-size: .48rem;
+  color: #fff;
+}
+.home .homeImg .contentArea .smallTitle {
+  height: .8rem;
+  font-size: .3rem;
+  color: #fff;
+}
+.home .homeImg .contentArea .btnArea {
+  width: 3.3rem;
+  padding-top: .26rem;
+  display: flex;
+  justify-content: space-between;
+}
+.home .homeImg .contentArea .btnArea .button {
+  width: 1.6rem;
+  height: .5rem;
+  line-height: .5rem;
+  border-radius: .04rem;
+  text-align: center;
+  color: #fff;
+  font-size: .14rem;
+  background: transparent;
+  border: .01rem solid #fff;
+}
+.home .homeImg .contentArea .btnArea .button.active {
+  background: #ff9800;
+  border: .01rem solid transparent;
+}
 .home .caption {
   font-size: .24rem;
   text-align: center;
@@ -157,6 +197,30 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 150, 136, 0.5);
+}
+.partnership .martian .green-bg .email {
+  padding: .6rem 1.5rem 0;
+  font-size: .24rem;
+  color: #fff;
+  text-align: center;
+}
+.partnership .martian .green-bg .midShow {
+  padding: 1.6rem 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.partnership .martian .green-bg .midShow .bgTitle {
+  font-size: .44rem;
+  color: #fff;
+}
+.partnership .martian .green-bg .midShow .imgArea {
+  width: 4.21rem;
+  display: flex;
+  justify-content: space-between;
+}
+.partnership .martian .green-bg .midShow .imgArea img {
+  width: 1.72rem;
+  height: .6rem;
 }
 
 .linkArea {

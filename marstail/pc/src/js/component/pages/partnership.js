@@ -3,7 +3,8 @@
  */
 import React,{Component} from 'react';
 
-// import Image1 from '../../../images/'
+import Image1 from '../../../icons/Appstore.png';
+import Image2 from '../../../icons/Playstore.png';
 
 class Partnership extends Component{
     render() {
@@ -19,7 +20,23 @@ class Partnership extends Component{
                 </div>
                 {/*<img src="" alt=""/>*/}
                 <div className="martian">
-                    <div className="green-bg"></div>
+                    <div className="green-bg">
+                        <div className="email">
+                            <p>
+                                Please email: hello@marstail.com for any partnership account inquiries. Or you can simply download
+                                the Marstail App and chat with our specilists. Looking forward to meeting you on Marstail.
+                            </p>
+                        </div>
+                        <div className="midShow">
+                            <p className="bgTitle">
+                                Get the new mobile App today
+                            </p>
+                            <div className="imgArea">
+                                <img src={Image1} alt=""/>
+                                <img src={Image2} alt=""/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

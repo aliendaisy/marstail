@@ -9,6 +9,46 @@
     background: #009688;
     @include card(.5rem,.5rem,.48rem,.24rem,#fff);
   }
+  .homeImg{
+    width: 100%;
+    height: 6.5rem;
+    background: url('../images/home.jpg') no-repeat;
+    background-size: 100%;
+    .contentArea{
+      padding: 1.66rem 0 0 .96rem;
+      .bigTitle{
+        height: 1.5rem;
+        font-size: .48rem;
+        color: #fff;
+      }
+      .smallTitle{
+        height: .8rem;
+        font-size: .3rem;
+        color: #fff;
+      }
+      .btnArea{
+        width: 3.3rem;
+        padding-top: .26rem;
+        display: flex;
+        justify-content: space-between;
+        .button {
+          width: 1.6rem;
+          height: .5rem;
+          line-height: .5rem;
+          border-radius: .04rem;
+          text-align: center;
+          color: #fff;
+          font-size: .14rem;
+          background: transparent;
+          border: .01rem solid #fff;
+        }
+        .button.active{
+          background: #ff9800;
+          border: .01rem solid transparent;
+        }
+      }
+    }
+  }
   .caption{
     @include caption(.74rem);
   }

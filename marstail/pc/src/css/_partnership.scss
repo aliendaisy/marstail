@@ -16,6 +16,30 @@
       width: 100%;
       height: 100%;
       background: rgba(0, 150, 136, 0.5);
+      .email{
+        padding: .6rem 1.5rem 0;
+        font-size: .24rem;
+        color: #fff;
+        text-align: center;
+      }
+      .midShow{
+        padding: 1.6rem 1.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        .bgTitle{
+          font-size: .44rem;
+          color: #fff;
+        }
+        .imgArea{
+          width: 4.21rem;
+          display: flex;
+          justify-content: space-between;
+          img{
+            width: 1.72rem;
+            height: .6rem;
+          }
+        }
+      }
     }
   }
 }
