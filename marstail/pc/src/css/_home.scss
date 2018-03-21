@@ -41,6 +41,11 @@
           font-size: .14rem;
           background: transparent;
           border: .01rem solid #fff;
+          cursor: pointer;
+          &:hover{
+            background: #ff9800;
+            border: .01rem solid transparent;
+          }
         }
         .button.active{
           background: #ff9800;

@@ -22,7 +22,17 @@ class Home extends Component{
                 'Contact',
                 'Partner Login'
             ],
+            tabs: [
+                {tabName: 'get started',id: 1},
+                {tabName: 'learn more',id: 2}
+            ],
+            currentIndex: 1
         }
+    }
+    tabSelect(id) {
+        this.setState({
+            currentIndex: id
+        });
     }
     render() {
         return (
@@ -42,10 +52,20 @@ class Home extends Component{
                             <p>Cross-platform mobile App</p>
                             <p>for tenant engagement</p>
                         </div>
-                        <div className="btnArea">
-                            <div className="button active">get started</div>
-                            <div className="button">learn more</div>
-                        </div>
+                        <ul className="btnArea">
+                            {this.state.tabs.map((res,i) => {
+                                let tabStyle = res.id === this.state.currentIndex ? 'button active' : 'button';
+                                return (
+                                    <li
+                                        key={i}
+                                        onClick={this.tabSelect.bind(this,res.id)}
+                                        className={tabStyle}
+                                    >
+                                        {res.tabName}
+                                    </li>
+                                )
+                            })}
+                        </ul>
                     </div>
                 </div>
                 <div className="card-box">
