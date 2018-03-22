@@ -9,7 +9,7 @@ import Image1 from '../../../images/Marstail Mockup.png'
 class Community extends Component{
     render() {
         return(
-            <div className="community">
+            <div className="community" id="Community">
                 <p className="caption">Designed for Workplace Community Users</p>
                 <div className="sub-title">
                     <p>Every workplace is a community.</p>

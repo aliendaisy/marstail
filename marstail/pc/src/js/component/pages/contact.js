@@ -19,9 +19,8 @@ class Contact extends Component{
     }
     render() {
         return(
-            <div className="contact">
+            <div className="contact" id="Contact">
                 <div className="building">
-
                 </div>
                 <LinkArea
                     linkList={this.state.linkList}

@@ -9,7 +9,7 @@ import Image2 from '../../../icons/Playstore.png';
 class Partnership extends Component{
     render() {
         return(
-            <div className="partnership">
+            <div className="partnership" id="Partnership">
                 <p className="caption">Designed for Our Partners to Enhance Customer Experience</p>
                 <div className="sub-title">
                     We constantly look for business partners to enhance our platform and create benefits for all parties.

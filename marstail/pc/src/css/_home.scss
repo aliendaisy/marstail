@@ -11,11 +11,13 @@
   }
   .homeImg{
     width: 100%;
-    height: 6.5rem;
+    margin-top: .8rem;
+    height: 6.3rem;
     background: url('../images/home.jpg') no-repeat;
     background-size: 100%;
     .contentArea{
       padding: 1.66rem 0 0 .96rem;
+      font-family: 'Alternate';
       .bigTitle{
         height: 1.5rem;
         font-size: .48rem;
@@ -35,16 +37,21 @@
           width: 1.6rem;
           height: .5rem;
           line-height: .5rem;
-          border-radius: .04rem;
+          border-radius: .05rem;
           text-align: center;
           color: #fff;
           font-size: .14rem;
           background: transparent;
           border: .01rem solid #fff;
           cursor: pointer;
+          a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+          }
           &:hover{
-            background: #ff9800;
-            border: .01rem solid transparent;
+            box-shadow: 0 0 .1rem .03rem rgba(255,255,255,0.5);
           }
         }
         .button.active{

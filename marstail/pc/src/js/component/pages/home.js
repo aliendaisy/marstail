@@ -23,8 +23,8 @@ class Home extends Component{
                 'Partner Login'
             ],
             tabs: [
-                {tabName: 'get started',id: 1},
-                {tabName: 'learn more',id: 2}
+                {tabName: 'Get Started',id: 1},
+                {tabName: 'Learn More',id: 2}
             ],
             currentIndex: 1
         }
@@ -36,7 +36,7 @@ class Home extends Component{
     }
     render() {
         return (
-            <div className="home">
+            <div className="home" id="Home">
                 <Header
                     title={'Marstail'}
                     navList={this.state.navList}
@@ -61,7 +61,7 @@ class Home extends Component{
                                         onClick={this.tabSelect.bind(this,res.id)}
                                         className={tabStyle}
                                     >
-                                        {res.tabName}
+                                        <a href={i === 0 ? '#Partnership' : '#About'}>{res.tabName}</a>
                                     </li>
                                 )
                             })}

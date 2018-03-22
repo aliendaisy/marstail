@@ -17,7 +17,7 @@ class LinkArea extends Component{
                             <li key={i}>
                                 {res.map((data,j) => {
                                     return(
-                                        <span key={j}>{data}</span>
+                                        <span key={j}><a href={`#${data}`}>{data}</a></span>
                                     )
                                 })}
                             </li>

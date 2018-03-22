@@ -12,7 +12,7 @@ import Image2 from '../../../images/Cafe.jpg';
 class About extends Component{
     render() {
         return(
-            <div className="about">
+            <div className="about" id="About">
                 <p className="sub-title">
                     Marstail improves traditional workplace by driving toward a people-centered building
                     ecosystem with the proprietary software and vibrant community services.
