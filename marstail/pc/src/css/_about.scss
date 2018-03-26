@@ -1,6 +1,9 @@
 @import "card";
 
 .about{
+  .caption{
+    @include caption(.5rem);
+  }
   .sub-title{
     @include subTitle;
   }

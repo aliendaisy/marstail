@@ -4,6 +4,9 @@
 import React,{Component} from 'react';
 
 class LinkArea extends Component{
+    handleClick(e) {
+        this.props.handleClick(e)
+    }
     render() {
         return(
             <div className="linkArea">
@@ -17,7 +20,9 @@ class LinkArea extends Component{
                             <li key={i}>
                                 {res.map((data,j) => {
                                     return(
-                                        <span key={j}><a href={`#${data}`}>{data}</a></span>
+                                        <span key={j} onClick={this.handleClick.bind(this,data)}>
+                                            {data}
+                                        </span>
                                     )
                                 })}
                             </li>

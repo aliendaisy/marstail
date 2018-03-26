@@ -2,7 +2,6 @@
  * Created by Administrator on 2018/3/16.
  */
 import React, {Component} from 'react';
-import Header from '../items/header';
 import Card from '../items/card';
 
 //图片
@@ -14,14 +13,6 @@ class Home extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            navList: [
-                'Home',
-                'About',
-                'Community',
-                'Partnership',
-                'Contact',
-                'Partner Login'
-            ],
             tabs: [
                 {tabName: 'Get Started',id: 1},
                 {tabName: 'Learn More',id: 2}
@@ -30,18 +21,22 @@ class Home extends Component{
         }
     }
     tabSelect(id) {
+        let a = document.getElementById('Home').scrollHeight;
+        let b = document.getElementById('About').scrollHeight;
+        let c = document.getElementById('Community').scrollHeight;
         this.setState({
             currentIndex: id
         });
+        //加1是为了让顶部nav变换样式
+        if(id === 1) {
+            window.scrollTo(0, a + b + c + 1);
+        }else{
+            window.scrollTo(0, a + 1)
+        }
     }
     render() {
         return (
             <div className="home" id="Home">
-                <Header
-                    title={'Marstail'}
-                    navList={this.state.navList}
-                >
-                </Header>
                 <div className="homeImg">
                     <div className="contentArea">
                         <div className="bigTitle">
@@ -61,7 +56,8 @@ class Home extends Component{
                                         onClick={this.tabSelect.bind(this,res.id)}
                                         className={tabStyle}
                                     >
-                                        <a href={i === 0 ? '#Partnership' : '#About'}>{res.tabName}</a>
+                                        {res.tabName}
+                                        {/*<a href={i === 0 ? '#Partnership' : '#About'}>{res.tabName}</a>*/}
                                     </li>
                                 )
                             })}
@@ -87,9 +83,6 @@ class Home extends Component{
                         content="Food, Wellness, Services"
                     />
                 </div>
-                <p className="caption">
-                    Designed for Technology Driven Commercial Real Estate
-                </p>
             </div>
         )
     }

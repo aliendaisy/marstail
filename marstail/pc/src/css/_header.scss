@@ -14,18 +14,16 @@
     font-family: 'Alternate';
   }
   .nav{
+    font-family: 'Helvetica';
     cursor: pointer;
     font-size: .18rem;
     span{
       display: inline-block;
       margin-right: .31rem;
-      a{
-        color: #1f1f1f;
-        border-bottom: .03rem solid transparent;
-        padding-bottom: .05rem;
-        transition: 0.5s;
-      }
-      &.active a{
+      border-bottom: .03rem solid transparent;
+      padding-bottom: .05rem;
+      transition: 0.5s;
+      &.active{
         color: #009688;
         border-bottom: .03rem solid #009688;
       }

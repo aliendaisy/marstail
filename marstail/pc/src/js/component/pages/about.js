@@ -13,6 +13,9 @@ class About extends Component{
     render() {
         return(
             <div className="about" id="About">
+                <p className="caption">
+                    Designed for Technology Driven Commercial Real Estate
+                </p>
                 <p className="sub-title">
                     Marstail improves traditional workplace by driving toward a people-centered building
                     ecosystem with the proprietary software and vibrant community services.

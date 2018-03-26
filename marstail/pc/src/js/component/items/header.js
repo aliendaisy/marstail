@@ -4,17 +4,8 @@
 import React, {Component} from 'react';
 
 class Header extends Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            activeId: 0,
-            link: 'http://marstail.com:20000/v1'
-        }
-    }
     handleClick(id) {
-        this.setState({
-            activeId: id
-        });
+        this.props.triggerClick(id);
     }
     render() {
         return (
@@ -25,10 +16,10 @@ class Header extends Component{
                         return(
                             <span
                                 key={i}
-                                className={this.state.activeId == i ? 'active' : ''}
+                                className={this.props.activeId === i ? 'active' : ''}
                                 onClick={this.handleClick.bind(this,i)}
                             >
-                                <a href={i === this.props.navList.length - 1 ? this.state.link : `#${list}`}>{list}</a>
+                                {list}
                             </span>
                         )
                     })}

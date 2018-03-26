@@ -25,13 +25,11 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    font-family: 'Helvetica';
     li{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      a{
-        color: #888;
-      }
     }
   }
 }

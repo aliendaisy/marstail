@@ -1,5 +1,6 @@
 @mixin card($iconW,$iconH,$space,$fontSize,$fontColor){
   .card{
+    font-family: 'Helvetica';
     display: flex;
     align-items: center;
     .icon{
